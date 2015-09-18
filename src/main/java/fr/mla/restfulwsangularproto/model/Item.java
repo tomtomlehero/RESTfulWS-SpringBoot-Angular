@@ -1,16 +1,26 @@
-package fr.mla.restfulwsangularproto;
+package fr.mla.restfulwsangularproto.model;
 
+import javax.persistence.*;
 
+@Entity
 public class Item {
 
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    @Column
     private String description;
+
+    @Column
     private boolean checked;
 
 
-    public Item(long id, String description, boolean checked) {
-        this.id = id;
+    public Item() {
+    }
+
+    public Item(String description, boolean checked) {
         this.description = description;
         this.checked = checked;
     }
@@ -38,5 +48,11 @@ public class Item {
 
     public void setChecked(boolean checked) {
         this.checked = checked;
+    }
+
+
+    @Override
+    public String toString() {
+        return String.format("Item [ id=%d - description = %s - checked = %b ]", id, description, checked);
     }
 }
