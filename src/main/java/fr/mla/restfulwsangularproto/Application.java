@@ -22,7 +22,7 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
 
-        // save a couple of customers
+        // save a couple of items
         repository.save(new Item("Banane", true));
         repository.save(new Item("Cerise", true));
         repository.save(new Item("Fraise", true));
@@ -37,34 +37,34 @@ public class Application implements CommandLineRunner {
         repository.save(new Item("Radis", false));
         repository.save(new Item("Carotte", false));
 
-        // fetch all customers
-        System.out.println("Items found with findAll():");
-        System.out.println("-------------------------------");
-        for (Item item : repository.findAll()) {
-            System.out.println(item);
-        }
-        System.out.println();
-
-        // fetch an individual item by ID
-        Item item = repository.findOne(1L);
-        System.out.println("Item found with findOne(1L):");
-        System.out.println("--------------------------------");
-        System.out.println(item);
-        System.out.println();
-
-        // fetch items by description
-        System.out.println("Item found with findByDescription():");
-        System.out.println("--------------------------------------------");
-        for (Item item1 : repository.findByDescription("Cerise")) {
-            System.out.println(item1);
-        }
-
-        // fetch items by description
-        System.out.println("Item found with findByChecked():");
-        System.out.println("--------------------------------------------");
-        for (Item item1 : repository.findByChecked(true)) {
-            System.out.println(item1);
-        }
+//        // fetch all customers
+//        System.out.println("Items found with findAll():");
+//        System.out.println("-------------------------------");
+//        for (Item item : repository.findAll()) {
+//            System.out.println(item);
+//        }
+//        System.out.println();
+//
+//        // fetch an individual item by ID
+//        Item item = repository.findOne(1L);
+//        System.out.println("Item found with findOne(1L):");
+//        System.out.println("--------------------------------");
+//        System.out.println(item);
+//        System.out.println();
+//
+//        // fetch items by description
+//        System.out.println("Item found with findByDescription():");
+//        System.out.println("--------------------------------------------");
+//        for (Item item1 : repository.findByDescription("Cerise")) {
+//            System.out.println(item1);
+//        }
+//
+//        // fetch items by description
+//        System.out.println("Item found with findByChecked():");
+//        System.out.println("--------------------------------------------");
+//        for (Item item1 : repository.findByChecked(true)) {
+//            System.out.println(item1);
+//        }
 
     }
 }
