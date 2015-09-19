@@ -1,4 +1,4 @@
-package fr.mla.restfulwsangularproto.model;
+package fr.mla.restfulws.model;
 
 import javax.persistence.*;
 

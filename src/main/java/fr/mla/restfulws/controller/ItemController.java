@@ -1,12 +1,10 @@
-package fr.mla.restfulwsangularproto.controller;
+package fr.mla.restfulws.controller;
 
 
-import fr.mla.restfulwsangularproto.dao.ItemRepository;
-import fr.mla.restfulwsangularproto.model.Item;
+import fr.mla.restfulws.dao.ItemRepository;
+import fr.mla.restfulws.model.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 public class ItemController {

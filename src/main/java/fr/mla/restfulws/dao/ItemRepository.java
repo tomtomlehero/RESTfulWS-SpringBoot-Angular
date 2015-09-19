@@ -1,9 +1,9 @@
-package fr.mla.restfulwsangularproto.dao;
+package fr.mla.restfulws.dao;
 
 
 //import org.springframework.data.jpa.repository.JpaRepository;
 
-import fr.mla.restfulwsangularproto.model.Item;
+import fr.mla.restfulws.model.Item;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

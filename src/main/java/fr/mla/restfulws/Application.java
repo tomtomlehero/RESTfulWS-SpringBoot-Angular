@@ -1,7 +1,7 @@
-package fr.mla.restfulwsangularproto;
+package fr.mla.restfulws;
 
-import fr.mla.restfulwsangularproto.dao.ItemRepository;
-import fr.mla.restfulwsangularproto.model.Item;
+import fr.mla.restfulws.dao.ItemRepository;
+import fr.mla.restfulws.model.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
